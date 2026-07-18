@@ -24,6 +24,7 @@ const envSchema = z.object({
 
   // Meta / WhatsApp
   META_APP_SECRET: z.string().default(''),
+  META_GRAPH_API_URL: z.string().default('https://graph.facebook.com/v21.0'),
   WEBHOOK_VERIFY_TOKEN: z.string().default('wati-webhook-verify-token'),
 
   // Redis

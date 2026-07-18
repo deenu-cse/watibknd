@@ -5,8 +5,9 @@ import { Conversation } from '../models/Conversation';
 import { Message } from '../models/Message';
 import { decrypt } from './encryption.service';
 import { ApiError } from '../utils/apiError';
+import { env } from '../config/env';
 
-const META_GRAPH_API = 'https://graph.facebook.com/v21.0';
+const META_GRAPH_API = env.META_GRAPH_API_URL;
 
 /**
  * Get decrypted access token for a WhatsApp account.
